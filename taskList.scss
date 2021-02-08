@@ -1,0 +1,80 @@
+@mixin reset {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+@mixin centering {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body {
+  @include reset;
+  min-height: 100vh;
+}
+header,
+form {
+  min-height: 20vh;
+  @include centering;
+}
+header {
+  #title {
+    font-size: 3rem;
+  }
+}
+.todo-container {
+  @include centering;
+}
+.card {
+  .todo-txt{
+    min-width: 30rem;
+  }
+  input {
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    border: none;
+    background: white;
+    border-radius: 5px;
+  }
+  button {
+    $btn-color: #ff6f47;
+    @extend input;
+    cursor: pointer;
+    color: $btn-color;
+    clip-path: circle(55% at 50% 50%);
+    transition: clip-path 0.5s ease-in-out;
+    outline: none;
+    &:active {
+      background: #e5e5e5;
+      -webkit-box-shadow: inset 0px 0px 5px #c1c1c1;
+         -moz-box-shadow: inset 0px 0px 5px #c1c1c1;
+              box-shadow: inset 0px 0px 5px #c1c1c1;
+       outline: none;
+    }
+  }
+  &:hover button {
+    clip-path: circle(100%);
+  }
+}
+
+.custom-shape-divider-top-1612710629 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  z-index: -1;
+}
+
+.custom-shape-divider-top-1612710629 svg {
+  position: relative;
+  display: block;
+  width: calc(224% + 1.3px);
+  height: 500px;
+  transform: rotateY(180deg);
+}
+
+.custom-shape-divider-top-1612710629 .shape-fill {
+  fill: #ff4500;
+}

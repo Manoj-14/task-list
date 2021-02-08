@@ -1,0 +1,97 @@
+body {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  min-height: 100vh;
+}
+
+header,
+form {
+  min-height: 20vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header #title {
+  font-size: 3rem;
+}
+
+.todo-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card .todo-txt {
+  min-width: 30rem;
+}
+
+.card input, .card button {
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  border: none;
+  background: white;
+  border-radius: 5px;
+}
+
+.card button {
+  cursor: pointer;
+  color: #ff6f47;
+  -webkit-clip-path: circle(55% at 50% 50%);
+          clip-path: circle(55% at 50% 50%);
+  -webkit-transition: -webkit-clip-path 0.5s ease-in-out;
+  transition: -webkit-clip-path 0.5s ease-in-out;
+  transition: clip-path 0.5s ease-in-out;
+  transition: clip-path 0.5s ease-in-out, -webkit-clip-path 0.5s ease-in-out;
+  outline: none;
+}
+
+.card button:active {
+  background: #e5e5e5;
+  -webkit-box-shadow: inset 0px 0px 5px #c1c1c1;
+  box-shadow: inset 0px 0px 5px #c1c1c1;
+  outline: none;
+}
+
+.card:hover button {
+  -webkit-clip-path: circle(100%);
+          clip-path: circle(100%);
+}
+
+.custom-shape-divider-top-1612710629 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  z-index: -1;
+}
+
+.custom-shape-divider-top-1612710629 svg {
+  position: relative;
+  display: block;
+  width: calc(224% + 1.3px);
+  height: 500px;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.custom-shape-divider-top-1612710629 .shape-fill {
+  fill: #ff4500;
+}
+/*# sourceMappingURL=taskList.css.map */
