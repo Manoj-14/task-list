@@ -51,8 +51,8 @@ header #title {
 .card button {
   cursor: pointer;
   color: #ff6f47;
-  -webkit-clip-path: circle(55% at 50% 50%);
-          clip-path: circle(55% at 50% 50%);
+  -webkit-clip-path: circle(45% at 50% 50%);
+          clip-path: circle(45% at 50% 50%);
   -webkit-transition: -webkit-clip-path 0.5s ease-in-out;
   transition: -webkit-clip-path 0.5s ease-in-out;
   transition: clip-path 0.5s ease-in-out;
@@ -93,5 +93,50 @@ header #title {
 
 .custom-shape-divider-top-1612710629 .shape-fill {
   fill: #ff4500;
+}
+
+.todo-container .todo-list {
+  min-width: 30%;
+}
+
+.todo-container .todo-list .todos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.5rem;
+  list-style: none;
+  border-radius: 3px;
+  margin: 10px;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.todo-container .todo-list .todos .todo-item {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  background: rgba(255, 255, 255, 0.25);
+  -webkit-box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+          box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(1.5px);
+  -webkit-backdrop-filter: blur(1.5px);
+  padding: 0.5rem;
+}
+
+.todo-container .todo-list .todos .checked-btn,
+.todo-container .todo-list .todos .trash-btn {
+  font-size: 1rem;
+  padding: 0.7rem;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
 }
 /*# sourceMappingURL=taskList.css.map */

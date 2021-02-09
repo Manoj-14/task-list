@@ -26,7 +26,7 @@ header {
   @include centering;
 }
 .card {
-  .todo-txt{
+  .todo-txt {
     min-width: 30rem;
   }
   input {
@@ -41,15 +41,15 @@ header {
     @extend input;
     cursor: pointer;
     color: $btn-color;
-    clip-path: circle(55% at 50% 50%);
+    clip-path: circle(45% at 50% 50%);
     transition: clip-path 0.5s ease-in-out;
     outline: none;
     &:active {
       background: #e5e5e5;
       -webkit-box-shadow: inset 0px 0px 5px #c1c1c1;
-         -moz-box-shadow: inset 0px 0px 5px #c1c1c1;
-              box-shadow: inset 0px 0px 5px #c1c1c1;
-       outline: none;
+      -moz-box-shadow: inset 0px 0px 5px #c1c1c1;
+      box-shadow: inset 0px 0px 5px #c1c1c1;
+      outline: none;
     }
   }
   &:hover button {
@@ -77,4 +77,38 @@ header {
 
 .custom-shape-divider-top-1612710629 .shape-fill {
   fill: #ff4500;
+}
+
+.todo-container {
+  .todo-list {
+    min-width: 30%;
+    .todos {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 1.5rem;
+      list-style: none;
+      
+      border-radius: 3px;
+      margin: 10px;
+      transition: all 0.5s ease-in-out;
+      .todo-item {
+        flex: 1;
+        background: rgba(255, 255, 255, 0.25);
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+        backdrop-filter: blur(1.5px);
+        -webkit-backdrop-filter: blur(1.5px);
+        padding: 0.5rem;
+      }
+      .checked-btn,
+      .trash-btn {
+        font-size: 1rem;
+        padding: 0.7rem;
+      }
+    }
+  }
+}
+.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
 }
