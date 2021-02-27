@@ -49,7 +49,7 @@ function deleteChecked(e) {
         // trashParent.remove();
         // console.log(trashParent);
     }
-    // checked functionaliy
+    // checked functionality
     if (targetBtn.className === 'checked-btn') {
         const checkedParent = targetBtn.parentElement;
         checkedParent.classList.toggle('completed');
