@@ -42,7 +42,8 @@ function deleteChecked(e) {
     if (targetBtn.className === 'trash-btn') {
         const trashParent = targetBtn.parentElement;
         trashParent.classList.add('fall');
-        trashParent.addEventListener("transitionend", function () {
+        // removeLocalTodos(todo);
+        trashParent.addEventListener("transitionend", e => {
             trashParent.remove();
         });
         // trashParent.remove();

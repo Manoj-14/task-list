@@ -56,7 +56,10 @@ header {
     clip-path: circle(100%);
   }
 }
-
+.fall{
+  transform: translatex(-10rem);
+  opacity: 0;
+}
 .custom-shape-divider-top-1612710629 {
   position: fixed;
   top: 0;
