@@ -48,8 +48,8 @@ header #title {
 }
 
 .card .select .filter-todo {
-  height: 2.8rem;
-  width: 10rem;
+  min-height: 2.8rem;
+  min-width: 10rem;
   font-size: 1.2rem;
   padding: 0.5rem;
   font-family: "Dancing Script", cursive;
@@ -147,7 +147,6 @@ header #title {
   font-size: 1.5rem;
   list-style: none;
   border-radius: 3px;
-  margin: 10px;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
@@ -173,5 +172,21 @@ header #title {
 .completed {
   text-decoration: line-through;
   opacity: 0.5;
+}
+
+@media screen and (max-width: 360px) {
+  body input, body .card button, .card body button {
+    font-size: 1.2rem !important;
+  }
+  body .filter-todo {
+    min-height: 1px;
+  }
+  body .card .todo-txt {
+    min-width: 1rem;
+  }
+  body .todos {
+    font-size: 1.2rem !important;
+    margin: 2px;
+  }
 }
 /*# sourceMappingURL=taskList.css.map */
