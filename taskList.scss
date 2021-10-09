@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Pacifico&display=swap");
 @mixin reset {
   padding: 0;
   margin: 0;
@@ -20,6 +21,8 @@ form {
 header {
   #title {
     font-size: 3rem;
+    font-family: "Pacifico", cursive;
+    color: white;
   }
 }
 .todo-container {
@@ -29,15 +32,31 @@ header {
   .todo-txt {
     min-width: 30rem;
   }
+  .select {
+    display: inline;
+    .filter-todo {
+      height: 2.8rem;
+      width: 10rem;
+      font-size: 1.2rem;
+      padding: 0.5rem;
+      font-family: "Dancing Script", cursive;
+      margin-left: 10px;
+      align-self: center;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+  }
   input {
     padding: 0.5rem;
     font-size: 1.5rem;
     border: none;
     background: white;
     border-radius: 5px;
+    font-family: "Dancing Script", cursive;
+    cursor: pointer;
   }
   button {
-    $btn-color: #ff6f47;
+    $btn-color: #2c73d2;
     @extend input;
     cursor: pointer;
     color: $btn-color;
@@ -56,7 +75,15 @@ header {
     clip-path: circle(100%);
   }
 }
+.fall {
+  transform: translatex(-10rem);
+  opacity: 0;
+}
 
+.fa-trash,
+.fa-check {
+  color: #2c73d2;
+}
 .custom-shape-divider-top-1612710629 {
   position: fixed;
   top: 0;
@@ -76,19 +103,20 @@ header {
 }
 
 .custom-shape-divider-top-1612710629 .shape-fill {
-  fill: #ff4500;
+  fill: #008ccb;
 }
 
 .todo-container {
   .todo-list {
     min-width: 30%;
+    font-family: "Dancing Script", cursive;
     .todos {
       display: flex;
       justify-content: space-between;
       align-items: center;
       font-size: 1.5rem;
       list-style: none;
-      
+
       border-radius: 3px;
       margin: 10px;
       transition: all 0.5s ease-in-out;
