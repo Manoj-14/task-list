@@ -140,23 +140,23 @@ header {
   text-decoration: line-through;
   opacity: 0.5;
 }
-@media screen and (max-width:360px) {
-  body{
+@media screen and (max-width: 360px) {
+  body {
     // background-color: black;
-    input{
+    input {
       font-size: 1.2rem !important;
     }
-    .filter-todo{
+    .filter-todo {
       min-height: 1px;
     }
-    .card{
-      .todo-txt{
+    .card {
+      .todo-txt {
         min-width: 1rem;
       }
     }
-    .todos{
+    .todos {
       font-size: 1.2rem !important;
-      margin:2px;
+      margin: 2px;
     }
   }
 }
